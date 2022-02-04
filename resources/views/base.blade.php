@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
-   <!--o meu nao funcionou sem chamar o JS-->
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>index</title>
 </head>
 <body>
-    <!-- Bootstrap navbar - green -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #74C69D;" >
+    <nav class="navbar navbar-expand-lg navbar-light pt-3" style="background-color: #74C69D;" >
         
         <div class="row text-success fs-5 fw-bold text-start p-3">G FARM</div>
                     
@@ -34,25 +27,26 @@
                     <a class="nav-link" href="#">Tarefas</a>
                     </li>                                     
                  </ul>
-
-                 <div class="row col-9"></div>
+    
+                 <div class="row col-8"></div>
                  <button class="btn btn-light me-3 ">Login</button>            
            
             </div>
         </div>
     </nav>
-    <hr>
 
     @yield('body')
 
-    <footer class="text-center text-white fixed-bottom" style="background-color: #74C69D;">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>    
-          
+    <script src="/js/bootstrap.min.js"></script>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" >
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2021 Company, Inc</span>
         </div>
-        <!-- Copyright -->
-      </footer>
+    <div class="col-md-8 d-flex align-items-center"> Desenvolvedores: Carlos Wilson e Leandro Santos</div>   
+  </footer>
 </body>
 </html>
