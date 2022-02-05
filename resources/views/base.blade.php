@@ -8,34 +8,37 @@
     <title>index</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light pt-3" style="background-color: #74C69D;" >
+    <nav class="navbar navbar-expand-lg navbar-light pt-0" style="background-color: #74C69D;" >
         
-        <div class="row text-success fs-5 fw-bold text-start p-3">G FARM</div>
+        <div class="row text-success fs-5 fw-bold text-start p-1 "><a class="nav-link" href="/"> G FARM</a></div>
                     
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav text-start">
                     <li class="nav-item fw-bold">
-                    <a class="nav-link ps-5" href="#">Campo</a>
+                    <a class="nav-link ps-5" href="{{ redirect("/TableEstado")}}">Campo</a>
                     </li>
                     <li class="nav-item fw-bold">
-                    <a class="nav-link" href="#">Trabalhadores</a>
+                    <a class="nav-link" href="trabalhador">Trabalhadores</a>
                     </li>
                     <li class="nav-item fw-bold">
-                    <a class="nav-link " href="#">Produção</a>
+                    <a class="nav-link " href="producao">Produção</a>
                     </li>
                     <li class="nav-item fw-bold">
-                    <a class="nav-link" href="#">Tarefas</a>
+                    <a class="nav-link" href="tarefas">Tarefas</a>
                     </li>                                     
                  </ul>
     
-                 <div class="row col-8"></div>
-                 <button class="btn btn-light me-3 ">Login</button>            
+                 <div class="row col-7 me-5 "></div>
+                 <a href="login" class="btn btn-secondary active" aria-current="page">Login</a>
+                 <div class="row col-0 ps-3 "></div>
+                 <a href="register" class="btn btn-secondary active" aria-current="page">Entrar</a>            
            
             </div>
         </div>
     </nav>
 
     @yield('body')
+</body>
 
     <script src="/js/bootstrap.min.js"></script>
 
@@ -48,5 +51,5 @@
         </div>
     <div class="col-md-8 d-flex align-items-center"> Desenvolvedores: Carlos Wilson e Leandro Santos</div>   
   </footer>
-</body>
+
 </html>
