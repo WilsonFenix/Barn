@@ -17,12 +17,15 @@ Route::get('/','DashboardController@index');
 Route::get('/trabalhador', function () {
     return view('trabalhador');
 });
+
 Route::get('/tarefas', function () {
     return view('tarefas');
 });
+
 Route::get('/campo', function () {
     return view('campo');
 });
+
 Route::post('/form/form_tarefa', function () {
     return view('form_tarefa');
 });
@@ -31,6 +34,7 @@ Route::get('/TableEstado',"EstadoController@getTable");
 Route::get('/form/FormEstado',"EstadoController@getForm");
 Route::post('/form/FormEstado',"EstadoController@add");
 Route::post('/Estado/remove/{id}',"EstadoController@remove");
+Route::post('/Estado/edit/{id}',"EstadoController@edit");
 
 Route::get('/producao', function () {
     return view('producao');

@@ -7,9 +7,6 @@
                 @csrf
                 <button type="submit" class="btn btndanger">Deletar</button>
             </form>
-        
         </li>
-    
     @endforeach
-    
 </ul>
